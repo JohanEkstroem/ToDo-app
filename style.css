@@ -1,0 +1,9 @@
+.completed {
+    text-decoration: line-through;
+}
+
+.trashcan {
+ font-size: 10px;
+ margin-left:10px;
+ cursor:pointer;
+}
