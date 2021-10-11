@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    
-    <h1>My ToDo-list</h1>
-    
-    <p id="tasksCompleted"></p>
-    <label for="input">Mata in text</label>
-    <input name="input" id="input">
-    <button type="text" id="btn">Lägg till</button>
-    
 
-    <ul id="ulList"></ul>
-   
-        
-    <p id="warning"></p>
+<body>
+    <div class="container">
+        <h1 class="color">My ToDo</h1>
+
+        <p id="tasksCompleted">completed: 0</p>
+        <br>
+        <br>
+        <input name="input" id="input">
+        <button type="text" id="btn">OK</button>
+
+        <ul id="ulList"></ul>
+
+
+
+        <p id="warning"></p>
+    </div>
+
+
     <script src="main.js"></script>
 </body>
+
 </html>
