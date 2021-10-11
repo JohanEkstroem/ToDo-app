@@ -14,6 +14,17 @@ body {
 .completed {
     text-decoration: line-through black;
     font-family: 'Ubuntu', sans-serif;
+    animation: fadeOut 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
 }
 
 .trashcan {
@@ -40,6 +51,18 @@ li {
     font-family: 'Ubuntu', sans-serif;
     list-style-type: none;
     margin-bottom: 10px;
+    animation: liFadeIn 1s;
+}
+
+@keyframes liFadeIn {
+    from {
+        transform: translate(0, 50px);
+        opacity: 0.1;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
 }
 
 .color {
@@ -52,7 +75,6 @@ li {
     border: 1px solid black;
     font-size: 36px;
     color: black;
-    text-align: center;
     border-radius: 10px;
     text-shadow: black;
     margin-bottom: 25px;
@@ -75,13 +97,13 @@ li {
 
 @keyframes container {
     0% {
-        transform: translate(0, -600px)
+        transform: translate(0, -600px);
     }
     50% {
-        transform: translate(0, 100px)
+        transform: translate(0, 100px);
     }
     100% {
-        transform: translate(0, 0)
+        transform: translate(0, 0);
     }
     ;
 }
@@ -90,3 +112,33 @@ button {
     font-size: 36px;
     margin-left: 3px;
 }
+
+h1,
+button,
+p,
+input {
+    animation: fadeIn 1000ms;
+    /*duration timing-function delay iteration-count direction fill-mode;*/
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*
+När man kommer in på sidan ska hela sidan animeras enligt videofilen: flyga ner uppifrån och fade in (KLAR)
+När man lägger till nya punkter i listan genom att skriva in dem och klicka på OK ska de animeras in enligt videofilen: fade-in och glidning uppåt (KLAR)
+När man klickar på en punkt för att markera den som klar ska den animeras enligt videofilen: Fade till grå (KLAR)
+Om man försöker lägga till en tom punkt ska felmeddelandet animeras enligt videofilen: Blinka rött
