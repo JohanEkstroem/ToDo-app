@@ -69,6 +69,21 @@ li {
     width: 50%;
     padding-top: 2px;
     padding-bottom: 10px;
+    animation: container 1s;
+    /*timing-function delay iteration-count direction fill-mode;*/
+}
+
+@keyframes container {
+    0% {
+        transform: translate(0, -600px)
+    }
+    50% {
+        transform: translate(0, 100px)
+    }
+    100% {
+        transform: translate(0, 0)
+    }
+    ;
 }
 
 button {
