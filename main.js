@@ -16,7 +16,7 @@ btn.addEventListener("click", function() {
 
 
     if (input.value == "") {
-        warning.innerHTML = "Du måste ange text!";
+        warning.innerHTML = "Input must not be empty";
         return;
     } else {
         warning.innerText = "";
