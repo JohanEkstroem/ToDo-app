@@ -9,6 +9,8 @@ let completedCount = 0;
 let totalTasks = document.querySelector("#totalTasks");
 
 tasksCompleted.innerHTML = completedCount + " completed";
+
+
 //Knapp som lägger till punkter på ToDo-listan
 btn.addEventListener("click", function() {
 
@@ -17,9 +19,11 @@ btn.addEventListener("click", function() {
 
     if (input.value == "") {
         warning.innerHTML = "Input must not be empty";
+        warning.classList.add('visible');
         return;
     } else {
         warning.innerText = "";
+        warning.classList.remove('visible');
         myArray.push(text);
     }
 
@@ -32,10 +36,6 @@ btn.addEventListener("click", function() {
     itemLabel.innerHTML = text;
     newListItem.appendChild(itemLabel);
 
-
-
-
-    //nrTasks.innerHTML = myArray.length;
     console.log(ulList);
     input.value = "";
 
