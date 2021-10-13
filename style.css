@@ -44,7 +44,6 @@ h1 {
 
 span {
     display: inline;
-    width: 100px;
 }
 
 span:nth-child(1):hover {
@@ -52,11 +51,11 @@ span:nth-child(1):hover {
 }
 
 li {
-    justify-content: center;
-    text-align: center;
-    margin: 5px;
+    text-align: left;
+    margin: auto;
+    padding-left: 70px;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Helvetica', Times, serif;
     list-style-type: none;
     margin-bottom: 10px;
@@ -74,25 +73,19 @@ li {
     }
 }
 
-.color {
-    color: black;
-    font-size: 20px;
-}
-
 #input {
     background-color: white;
     border: 1px solid black;
     font-size: 20px;
-    color: black;
     border-radius: 3px;
-    text-shadow: black;
     margin-bottom: 5px;
     width: 40%;
     height: 20px;
+    outline: blue;
 }
 
 #input:focus {
-    border: 3px solid blue;
+    border: 2px solid blue;
 }
 
 .container {

@@ -40,8 +40,9 @@ btn.addEventListener("click", function() {
     input.value = "";
 
     const trashcan = document.createElement("span");
-    trashcan.innerHTML = "&#X1F5D1";
-    trashcan.setAttribute("class", "trashcan");
+    //trashcan.innerHTML = "&#X1F5D1";
+    trashcan.innerText = '\uD83D\uDDD1\uFE0F';
+    trashcan.classList.add("trashcan");
     newListItem.appendChild(trashcan);
 
     //Lägg till klick på våra ToDos i listan
