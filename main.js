@@ -12,7 +12,17 @@ tasksCompleted.innerHTML = completedCount + " completed";
 
 
 //Knapp som lägger till punkter på ToDo-listan
-btn.addEventListener("click", function() {
+btn.addEventListener("click", addToDo);
+//Hämtar samma funktion men man kan trycka på enter också
+input.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        addToDo();
+    }
+});
+
+
+
+function addToDo() {
 
     const text = input.value;
 
@@ -64,5 +74,4 @@ btn.addEventListener("click", function() {
         myArray.pop();
 
     })
-
-});
+};
